@@ -13,14 +13,38 @@
     align-items: center;
 }
 
+body {
+    display: grid;
+    grid-template-areas: 
+    "a-header"
+    "a-main"
+    "a-section";
+}
+
 .a {
-    border-color: #ffffba
+    border-color: #ffffba;
+    min-height: 50vh;
+    grid-area: a-header;
 }
 
 .b {
     border-color: #ffdfba;
+    min-height: 50vh;
+    grid-area: a-main;
 }
 
 .c {
     border-color: #baffc9;
+    min-height: 50vh;
+    grid-area: a-section;
+}
+
+
+@media (min-width: 600px) {
+    body {
+        grid-template-areas: 
+        "a-header a-header"
+        "a-section a-main ";
+    }
+
 }
