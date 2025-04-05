@@ -19,7 +19,7 @@ body {
 }
 
 .p {
-    border-color: #ffffba
+    border-color: #ffffba;
 }
 
 .t {
@@ -30,6 +30,7 @@ body {
     border-color: #baffc9;
     position: relative;
     padding-bottom: 56.25%;
+    width: 100%;
 }
 
 .video {
@@ -38,4 +39,18 @@ body {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+@media (min-width: 600px) and (max-width: 1199px) {
+    /* .p, .v {
+        min-width: 200px;
+        max-width: 50%;
+        flex-basis: 50%;
+    } */
+}
+
+@media (min-width: 1200px) {
+    body {
+
+    }
 }
