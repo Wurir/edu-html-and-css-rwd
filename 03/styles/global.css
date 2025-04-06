@@ -7,29 +7,38 @@
 body {
     max-width: 1200px;
     margin: 0 auto;
+    display: grid;
+    grid-template-areas: 
+    "p"
+    "t"
+    "v";
 }
 
 .p, .t, .v {
     border: 3px solid transparent;
     min-height: 50px;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .p {
     border-color: #ffffba;
+    grid-area: p;
 }
 
 .t {
     border-color: #ffdfba;
+    grid-area: t;
 }
 
 .v {
     border-color: #baffc9;
     position: relative;
     padding-bottom: 56.25%;
+    width: 100%;
+    grid-area: v;
+}
+
+.image {
     width: 100%;
 }
 
@@ -42,15 +51,19 @@ body {
 }
 
 @media (min-width: 600px) and (max-width: 1199px) {
-    /* .p, .v {
-        min-width: 200px;
-        max-width: 50%;
-        flex-basis: 50%;
-    } */
+    body {
+        grid-template-columns: minmax(200px, 50%) 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas: 
+        "p t"
+        "v t";
+    }
 }
 
 @media (min-width: 1200px) {
     body {
-
+        grid-template-areas: 
+        "p v"
+        "t t";
     }
 }
