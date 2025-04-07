@@ -120,7 +120,7 @@ nav {
 
 @media (min-width: 700px) {
     .nav__list {
-        display: flex;
+        display: flex !important; 
     }
     .nav__sub-list {
         width: 200px;
