@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main: #f4f4f4;
+    --nav: #fff;
+    --nav-dropdown: #282828;
+    --font-nav: #282828;
+    --nav-hover: skyblue;
+}
+
+body {
+    background-color: var(--main);
+}
+
+nav {
+    margin: 10px;
+    background-color: var(--nav);
+    min-height: 50px;
+}
+
+.nav__hamburger {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-top: 3px solid black;
+    border-bottom: 3px solid black;
+    float: right;
+}
+
+.nav__hamburger::after {
+    display: block;
+    content: "";
+    height: 3px;
+    background-color: black;
+    position: relative;
+    top: 7px;
+}
+
+
+.nav__list, .nav__sub-list{
+    display: block;
+    list-style: none;
+}
+.nav__list, .nav__hamburger-checkbox {
+    display: none;
+}
+
+.nav__hamburger-checkbox:checked + .nav__list {
+    display: block;
+}
+
+.nav__item {
+    height: 70px;
+    min-width: 150px;
+    border-top: 3px solid transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.nav__link {
+    text-decoration: none;
+    display: block;
+    height: 100%;
+    width: 100%;
+    line-height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--font-nav);
+}
+
+.nav__link:hover {
+    color: var(--nav-hover);
+}
+
+
+.nav__sub-list {
+    display: none;
+}
+
+.dropdown-arrow-down {
+    transform: rotate(90deg);
+
+}
+
+.dropdown-arrow-right {
+    transform: rotate(90deg);
+
+}
+
+.nav__item-dropdown:hover > .nav__sub-list {
+    display: initial;
+}
+
+.nav__item-dropdown {
+    position: relative;
+
+}
+
+
+.nav__sub-list {
+    position: absolute;
+    width: calc(100% - 15%);
+    top: 100%;
+    left: 15%;
+    background-color: var(--nav-dropdown);
+}
+.nav__sub-list .nav__link {
+    color: white;
+    text-decoration: none;
+}
+
+
+
+@media (min-width: 700px) {
+    .nav__list {
+        display: flex;
+    }
+    .nav__sub-list {
+        width: 200px;
+        
+    }
+
+    .nav__item-dropdown2 {
+        position: relative;
+    }
+
+    .nav__sub-list2 {
+        position: absolute;
+        left: 100%;
+        top: 0;
+    }
+
+    .dropdown-arrow-right {
+        transform: none;
+        
+    }
+    .nav__hamburger {
+        display: none;
+    }
+}
