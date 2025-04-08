@@ -6,12 +6,14 @@
 
 .content {
     background-color: var(--content);
+    min-height: 50px;
 }
 
 .wrapper {
-    background-color: var(--wrapper);
+    border: 3px solid var(--wrapper);
+    padding: 3px;
 }
 
 .container {
-    background-color: var(--container);
+    border: 3px solid var(--container);
 }

@@ -1,0 +1,32 @@
+.nav, .footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__logo, .footer__copyrights {
+    margin: 5px;
+    width: 150px;
+    height: 50px;
+}
+
+.nav__menu {
+    background-color: none;
+}
+
+
+.hero__container, .testimonials__container, .testimonials__list {
+    height: calc(100vh - 100px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero__image {
+    flex-basis: 49%
+}
+
+.testimonials__item {
+    flex-basis: 32%;
+}
+
