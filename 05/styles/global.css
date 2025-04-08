@@ -1,17 +1,17 @@
 :root {
     --content: orange;
-    --main-container: green;
-    --section-container: blue;
+    --wrapper: green;
+    --container: blue;
 }
 
 .content {
     background-color: var(--content);
 }
 
-.main-container {
-    background-color: var(--main-container);
+.wrapper {
+    background-color: var(--wrapper);
 }
 
-.section-container {
-    background-color: var(--section-container);
+.container {
+    background-color: var(--container);
 }
