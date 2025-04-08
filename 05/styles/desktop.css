@@ -32,6 +32,18 @@
 
 .hero__image {
     flex-basis: 49%;
-    height: 50vh;
+    height: 40vh;
     margin: 10px 0;
 }
+
+.testimonials__list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.testimonials__item {
+    flex-basis: 32%;
+    height: 30vh;
+    margin: 10px;
+}
+
