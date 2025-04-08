@@ -2,6 +2,9 @@
     max-width: 1000px;
     margin: 0 auto;
 }
+.wrapper {
+    margin: 2px;
+}
 
 .nav {
     display: flex;
@@ -22,3 +25,13 @@
     margin: 3px 0;
 }
 
+.hero__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hero__image {
+    flex-basis: 49%;
+    height: 50vh;
+    margin: 10px 0;
+}
