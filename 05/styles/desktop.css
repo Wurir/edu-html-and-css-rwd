@@ -32,7 +32,7 @@
 
 .hero__image {
     flex-basis: 49%;
-    height: 40vh;
+    height: 50vh;
     margin: 10px 0;
 }
 
@@ -47,3 +47,13 @@
     margin: 10px;
 }
 
+.footer__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__copyrights {
+    width: 200px;
+    margin: 5px;
+}
